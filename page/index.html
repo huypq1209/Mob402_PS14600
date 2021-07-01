@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE  -->
+    <script src="../js/chart.js"></script>
+   
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+                <div class="col-md-12">
+                    <!-- Advanced Tables -->
+                    <div class="panel panel-default row">
+                        
+                            <h1>Welcome <span class="text-info">Admin</span>  </h1>
+                            
+                            <div class="col-md-12 d-flex flex-row-reverse">
+                            
+                            <a href="login.html" class="p-2 ml-3 btn btn-danger"> <h5> Logout</h5></a>
+                            <a class="pl-4 pr-4 text-center btn btn-primary" data-toggle="modal" data-target="#myModal"> <h5>Add</h5> </a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div >
+                            <h2> Danh sách sản phẩm</h2> 
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th>Tên</th>
+                                            <th>Chi tiết</th>
+                                            <th>Người đăng</th>
+                                            <th>Ngày đăng</th>
+                                            <th>Tùy chọn</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd gradeX">
+                                            <td>Tên</td>
+                                            <td>Chi tiết</td>
+                                            <td>Administrator</td>
+                                            <td >01/01/2021</td>
+                                            <td ><a href="#" >Delete</a> &nbsp <a href="#" data-toggle="modal" data-target="#myModal" >Edit</a></td>
+                                        </tr>
+                                        <tr class="even gradeC">
+                                            <td>Tên</td>
+                                            <td>Chi tiết</td>
+                                            <td>Administrator</td>
+                                            <td >01/01/2021</td>
+                                            <td ><a href="#" >Delete</a> &nbsp <a href="#" data-toggle="modal" data-target="#myModal">Edit</a></td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td>Tên</td>
+                                            <td>Chi tiết</td>
+                                            <td>Administrator</td>
+                                            <td >01/01/2021</td>
+                                            <td ><a href="#" >Delete</a> &nbsp <a href="#" data-toggle="modal" data-target="#myModal">Edit</a></td>
+                                        </tr>
+                                        <tr class="even gradeC">
+                                            <td>Tên</td>
+                                            <td>Chi tiết</td>
+                                            <td>Administrator</td>
+                                            <td >01/01/2021</td>
+                                            <td ><a href="#" >Delete</a> &nbsp <a href="#" data-toggle="modal" data-target="#myModal">Edit</a></td>
+                                        </tr>
+                                        <tr class="odd gradeX">
+                                            <td>Tên</td>
+                                            <td>Chi tiết</td>
+                                            <td>Administrator</td>
+                                            <td >01/01/2021</td>
+                                            <td ><a href="#" >Delete</a> &nbsp <a href="#" data-toggle="modal" data-target="#myModal" >Edit</a></td>
+                                        </tr>
+                                        <tr class="even gradeC">
+                                            <td>Tên</td>
+                                            <td>Chi tiết</td>
+                                            <td>Administrator</td>
+                                            <td >01/01/2021</td>
+                                            <td ><a href="#" >Delete</a> &nbsp <a href="#" data-toggle="modal" data-target="#myModal">Edit</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--End Advanced Tables -->
+                </div>
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                      <div class="modal-content pl-2 pr-2">
+                      
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Form sản phẩm</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        
+                        <!-- Modal body -->
+                        <div class="modal-body ">
+                            <form action="index.html">
+                                
+                                <div class="form-group">
+                                    <p>Tên sản phẩm</p>
+                                  <input type="text" class="form-control" id="text" placeholder="Tên sản phẩm" >
+                                </div>
+                                <div class="form-group">
+                                  <p>Chi tiết</p>
+                                  <textarea type="" class="form-control" id="pwd" rows="4" ></textarea> 
+                                </div>
+                                <div class=" row ">
+                                    <p class="col-sm-4 ml-3 " >Ngày</p>
+                                    <p class="col-sm-2 ml-2 mr-2">Tháng</p>
+                                    <p class="col-sm-2 ml-2 mr-2">Năm</p>
+                                </div>
+                                <div class="form-group row ">
+                                    
+                                    <select name="form-control" class="col-sm-4 ml-3 " id="sel1">
+                                        
+                                        <script>
+                                            var n = 1;
+                                            while ( n <= 31) {
+                                                document.write("<option>" + n + "</option>");
+                                                n++; 
+                                            }
+                                            </script>
+                                    </select>
+                                    <select name="form-control" class="col-sm-2 ml-2 mr-1" id="sel1">
+                                        <script>
+                                            var n = 1;
+                                            while ( n <= 12) {
+                                                document.write("<option>" + n + "</option>");
+                                                n++; 
+                                            }
+                                            </script>
+                                    </select>
+                                    <select name="form-control " class="col-sm-3 ml-2 mr-1" id="ngay">
+                                       >
+                                       
+                                            <script>
+                                            var n = 1990;
+                                            while ( n <= 2050) {
+                                                
+                                                document.write("<option >" + n + "</option>");
+                                                n++; 
+                                                if(n==2021){
+                                                    document.write("<option selected>" + n + "</option>");
+                                                }
+                                                
+                                            }
+                                            </script>
+                                            
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary pl-5 pr-5 ">Save</button>
+                              </form>
+                        </div>
+                        
+                        <!-- Modal footer -->
+                       
+                      </div>
+                    </div>
+            </div>
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Thống kê</h6>
+                </div>
+                <div class="col-md-12">
+                    <canvas id="barChart"></canvas>
+                  </div>
+            </div>
+            
+    </div>
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="/js/mdb.min.js"></script>
+    <script>
+        //bar
+       var ctxB = document.getElementById("barChart").getContext('2d');
+       var myBarChart = new Chart(ctxB, {
+       type: 'bar',
+       data: {
+       labels: ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"],
+       datasets: [{
+       label: 'Sản phẩm',
+       data: [12, 19, 3, 5, 2, 3,12, 19, 3, 5, 2, 3],
+       backgroundColor: [
+       'rgba(255, 99, 132, 0.2)',
+       'rgba(54, 162, 235, 0.2)',
+       'rgba(255, 206, 86, 0.2)',
+       'rgba(75, 192, 192, 0.2)',
+       'rgba(153, 102, 255, 0.2)',
+       'rgba(255, 159, 64, 0.2)',
+       'rgba(255, 99, 132, 0.2)',
+       'rgba(54, 162, 235, 0.2)',
+       'rgba(255, 206, 86, 0.2)',
+       'rgba(75, 192, 192, 0.2)',
+       'rgba(153, 102, 255, 0.2)',
+       'rgba(255, 159, 64, 0.2)'
+       ],
+       borderColor: [
+       'rgba(255,99,132,1)',
+       'rgba(54, 162, 235, 1)',
+       'rgba(255, 206, 86, 1)',
+       'rgba(75, 192, 192, 1)',
+       'rgba(153, 102, 255, 1)',
+       'rgba(255, 159, 64, 1)',
+       'rgba(255,99,132,1)',
+       'rgba(54, 162, 235, 1)',
+       'rgba(255, 206, 86, 1)',
+       'rgba(75, 192, 192, 1)',
+       'rgba(153, 102, 255, 1)',
+       'rgba(255, 159, 64, 1)'
+       ],
+       borderWidth: 1
+       }]
+       },
+       options: {
+       scales: {
+       yAxes: [{
+       ticks: {
+       beginAtZero: true
+       }
+       }]
+       }
+       }
+       });
+       </script>
+</body>
+
+</html>
